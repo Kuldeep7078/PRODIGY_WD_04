@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Portfolio • Kuldeep Singh Rawat</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="./portfolio.css" />
+	</head>
+	<body>
+		<header id="site-header" class="site-header" role="banner">
+			<div class="container nav-container">
+				<a class="logo" href="#home">KSR</a>
+				<nav id="primary-nav" class="primary-nav" aria-label="Primary">
+					<button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Toggle navigation">
+						<span class="sr-only">Menu</span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</button>
+					<ul id="nav-list" class="nav-list">
+						<li><a class="nav-link" href="#home">Home</a></li>
+						<li><a class="nav-link" href="#about">About</a></li>
+						<li><a class="nav-link" href="#skills">Skills</a></li>
+						<li><a class="nav-link" href="#projects">Projects</a></li>
+						<li><a class="nav-link" href="#education">Education</a></li>
+						<li><a class="nav-link" href="#experience">Experience</a></li>
+						<li><a class="nav-link" href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main id="home" class="main-content" tabindex="-1">
+			<section class="section hero">
+				<div class="container hero-inner">
+					<div class="hero-grid">
+						<div class="intro">
+							<p class="eyebrow">Web Developer</p>
+							<h1>Hi, I'm Kuldeep Singh Rawat. I build fast, accessible, and beautiful web experiences.</h1>
+							<p class="lead">Frontend-focused developer with a passion for crafting user-centric products using HTML, CSS, JavaScript, and modern frameworks.</p>
+							<div class="cta-group">
+								<a href="#projects" class="btn btn-primary">View Projects</a>
+								<a href="#contact" class="btn btn-outline">Contact Me</a>
+							</div>
+						</div>
+						<div class="photo">
+							<img src="https://via.placeholder.com/520x520.png?text=Your+Photo" alt="Portrait of Kuldeep Singh Rawat" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="about" class="section about">
+				<div class="container narrow">
+					<h2>About Me</h2>
+					<p>I'm a detail-oriented web developer with experience building responsive, accessible interfaces. I enjoy turning complex problems into simple, delightful solutions. My background includes collaborating with cross-functional teams, optimizing performance, and delivering maintainable code.</p>
+				</div>
+			</section>
+
+			<section id="skills" class="section skills">
+				<div class="container">
+					<h2>Skills</h2>
+					<div class="grid skills-grid">
+						<div class="chip">C</div>
+						<div class="chip">C++</div>
+						<div class="chip">Java</div>
+						<div class="chip">HTML</div>
+						<div class="chip">CSS</div>
+						<div class="chip">JavaScript</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="projects" class="section projects">
+				<div class="container">
+					<h2>Projects</h2>
+					<div class="grid project-grid">
+						<article class="project-card">
+							<div class="thumb" aria-hidden="true"></div>
+							<h3>Responsive Landing Page</h3>
+							<p>A modern, responsive landing page with fixed navigation and scroll-aware interactions.</p>
+							<a class="link" href="#" aria-label="Open project details">View Details</a>
+						</article>
+						<article class="project-card">
+							<div class="thumb" aria-hidden="true"></div>
+							<h3>Stopwatch Web App</h3>
+							<p>Precise timing with start/pause/reset and lap tracking, built with vanilla JS.</p>
+							<a class="link" href="#" aria-label="Open project details">View Details</a>
+						</article>
+						<article class="project-card">
+							<div class="thumb" aria-hidden="true"></div>
+							<h3>Tic‑Tac‑Toe Game</h3>
+							<p>Play vs player or an unbeatable AI using the minimax algorithm.</p>
+							<a class="link" href="#" aria-label="Open project details">View Details</a>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section id="education" class="section education">
+				<div class="container narrow">
+					<h2>Education</h2>
+					<ul class="timeline">
+						<li>
+							<div class="timemark"></div>
+							<div class="timebody">
+								<h3>Bachelor of Technology in Computer Science</h3>
+								<p class="meta">Graphic Era Hill University • 2022 – 2026</p>
+								<p>Relevant coursework: Data Structures, Web Development, Databases, Algorithms.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="experience" class="section experience">
+				<div class="container narrow">
+					<h2>Professional Experience</h2>
+					<ul class="timeline">
+						<li>
+							<div class="timemark"></div>
+							<div class="timebody">
+								<h3>Frontend Developer • XYZ Company</h3>
+								<p class="meta">2025 – Present</p>
+								<p>Worked on building and optimizing responsive UI components, improving performance, and collaborating with designers to deliver accessible experiences.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="contact" class="section contact">
+				<div class="container">
+					<h2>Contact</h2>
+					<form class="contact-form" onsubmit="return false;">
+						<label>
+							<span>Name</span>
+							<input type="text" placeholder="Your name" required />
+						</label>
+						<label>
+							<span>Email</span>
+							<input type="email" placeholder="name@example.com" required />
+						</label>
+						<label class="full">
+							<span>Message</span>
+							<textarea rows="4" placeholder="How can we work together?"></textarea>
+						</label>
+						<button class="btn btn-primary" type="submit">Send</button>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container">
+				<p>© <span id="year"></span> Kuldeep Singh Rawat. All rights reserved.</p>
+			</div>
+		</footer>
+
+		<script src="./portfolio.js" defer></script>
+	</body>
+</html> 
